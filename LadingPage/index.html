@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Sensation | Evento de Amostra Tecnológica Cinematográfica 2026</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Amostra Tecnológica Cinematográfica Real Sensation no MASP, São Paulo. 1 e 2 de Novembro de 2026. Redefinindo o cinema com imersão sensorial absoluta, IA e experiências físicas coletivas.">
+  <meta name="keywords" content="Real Sensation, Cinema do Futuro, Cinema Sensorial, MASP São Paulo, Tecnologia Cinematográfica, IA no Cinema, Imersão 4D, Evento São Paulo 2026">
+  <meta name="author" content="Real Sensation Tech Experience">
+  <meta property="og:title" content="Real Sensation | O Cinema do Futuro no MASP">
+  <meta property="og:description" content="1 e 2 de Novembro de 2026 no MASP, SP. Venha vivenciar a imersão sensorial absoluta e a revolução da inteligência artificial no cinema.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+
+  <!-- Schema.org Event Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Real Sensation - Amostra Tecnológica Cinematográfica",
+    "startDate": "2026-11-01T10:00:00-03:00",
+    "endDate": "2026-11-02T22:00:00-03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "MASP - Museu de Arte de São Paulo Assis Chateaubriand",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Paulista, 1578",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01310-200",
+        "addressCountry": "BR"
+      }
+    },
+    "description": "Evento de amostra tecnológica cinematográfica redefinindo o cinema através de imersão sensorial absoluta, inteligência artificial e experiências físicas coletivas.",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Real Sensation",
+      "url": "https://realsensation.cinematech.com"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Background Particle Canvas -->
+  <canvas id="cyber-canvas"></canvas>
+
+  <!-- Ambient Audio Indicator / Visualizer -->
+  <div class="sound-wave-decor" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-wrapper" id="main-header">
+    <nav class="navbar container" aria-label="Navegação Principal">
+      <a href="#hero" class="brand-logo" id="brand-logo-link">
+        <img src="assets/images/logo.jpg" alt="Real Sensation Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-title">REAL SENSATION</span>
+          <span class="brand-subtitle" data-i18n="nav_brand_sub">CINEMA DO FUTURO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links-list">
+        <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Início</a></li>
+        <li><a href="#sobre" class="nav-link" data-i18n="nav_about">O Projeto</a></li>
+        <li><a href="#experiencia" class="nav-link" data-i18n="nav_experience">Imersão</a></li>
+        <li><a href="#video-demo" class="nav-link" data-i18n="nav_video">Demonstração</a></li>
+        <li><a href="#programacao" class="nav-link" data-i18n="nav_schedule">Programação</a></li>
+        <li><a href="#localizacao" class="nav-link" data-i18n="nav_location">Local</a></li>
+        <li><a href="#faq" class="nav-link" data-i18n="nav_faq">Dúvidas</a></li>
+      </ul>
+
+      <!-- Language Switcher & Action Button -->
+      <div class="nav-actions">
+        <!-- Language Selector -->
+        <div class="lang-selector-wrapper" id="lang-wrapper">
+          <button type="button" class="lang-btn active" data-lang="pt" id="lang-pt" title="Português">
+            <span class="flag-icon">🇧🇷</span> PT
+          </button>
+          <span class="lang-divider">/</span>
+          <button type="button" class="lang-btn" data-lang="en" id="lang-en" title="English">
+            <span class="flag-icon">🇺🇸</span> EN
+          </button>
+          <span class="lang-divider">/</span>
+          <button type="button" class="lang-btn" data-lang="es" id="lang-es" title="Español">
+            <span class="flag-icon">🇪🇸</span> ES
+          </button>
+        </div>
+
+        <!-- CTA Header Button -->
+        <button type="button" class="btn btn-glow-nav open-modal-btn" id="nav-cta-btn" data-i18n="nav_cta">
+          Garantir Acesso
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-toggle-btn" id="mobile-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        
+        <!-- Showcase Event Badge -->
+        <div class="hero-badge-wrapper">
+          <div class="cyber-badge pulse-glow" id="hero-badge">
+            <span class="badge-dot"></span>
+            <span data-i18n="hero_badge">EVENTO DE AMOSTRA TECNOLÓGICA CINEMATOGRÁFICA</span>
+          </div>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="hero-title">
+          <span class="hero-title-light" data-i18n="hero_title_1">O FUTURO DO CINEMA</span><br>
+          <span class="hero-title-gradient" data-i18n="hero_title_2">NÃO CABE EM CASA.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle" data-i18n="hero_desc">
+          Redefinindo a sétima arte através da imersão sensorial absoluta, inteligência artificial generativa em tempo real e experiências físicas coletivas impossíveis de replicar na sua sala de estar.
+        </p>
+
+        <!-- HIGHLIGHT: DATE & LOCATION HERO CARD -->
+        <div class="hero-highlight-card" id="hero-highlight">
+          <div class="highlight-item highlight-date">
+            <div class="highlight-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="highlight-content">
+              <span class="highlight-label" data-i18n="hero_date_label">DATA DO EVENTO</span>
+              <strong class="highlight-val date-pulse" data-i18n="hero_date_val">1 e 2 de Novembro de 2026</strong>
+              <span class="highlight-sub" data-i18n="hero_date_sub">Sábado e Domingo • Das 10h às 22h</span>
+            </div>
+          </div>
+
+          <div class="highlight-divider"></div>
+
+          <div class="highlight-item highlight-location">
+            <div class="highlight-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="highlight-content">
+              <span class="highlight-label" data-i18n="hero_loc_label">LOCALIZAÇÃO</span>
+              <strong class="highlight-val" data-i18n="hero_loc_val">MASP — São Paulo</strong>
+              <span class="highlight-sub" data-i18n="hero_loc_sub">Avenida Paulista, 1578 • SP</span>
+            </div>
+          </div>
+
+          <div class="highlight-divider"></div>
+
+          <div class="highlight-item highlight-access">
+            <div class="highlight-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="highlight-content">
+              <span class="highlight-label" data-i18n="hero_access_label">ACESSO</span>
+              <strong class="highlight-val highlight-green" data-i18n="hero_access_val">Entrada Gratuita</strong>
+              <span class="highlight-sub" data-i18n="hero_access_sub">Credenciamento VIP Antecipado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COUNTDOWN TIMER TO EVENT -->
+        <div class="countdown-container" id="countdown-wrapper">
+          <span class="countdown-title" data-i18n="countdown_title">CONTAGEM REGRESSIVA PARA A REVOLUÇÃO</span>
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <span class="countdown-number" id="days">000</span>
+              <span class="countdown-unit" data-i18n="cd_days">DIAS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="hours">00</span>
+              <span class="countdown-unit" data-i18n="cd_hours">HORAS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="minutes">00</span>
+              <span class="countdown-unit" data-i18n="cd_minutes">MINUTOS</span>
+            </div>
+            <div class="countdown-sep">:</div>
+            <div class="countdown-box">
+              <span class="countdown-number" id="seconds">00</span>
+              <span class="countdown-unit" data-i18n="cd_seconds">SEGUNDOS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary-cyber open-modal-btn" id="hero-cta-primary">
+            <span class="btn-text" data-i18n="hero_btn_rsvp">GARANTIR CREDENCIAL VIP</span>
+            <span class="btn-glow-effect"></span>
+          </button>
+          <a href="#video-demo" class="btn btn-secondary-cyber" id="hero-cta-video">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span data-i18n="hero_btn_watch">Ver Demonstração</span>
+          </a>
+        </div>
+
+        <!-- Sensory Key Metrics -->
+        <div class="hero-metrics-strip">
+          <div class="metric-item">
+            <span class="metric-num">360°</span>
+            <span class="metric-desc" data-i18n="metric_audio">Áudio Neuroacústico</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">0.2ms</span>
+            <span class="metric-desc" data-i18n="metric_latency">Latência Háptica Ultra-Baixa</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">100%</span>
+            <span class="metric-desc" data-i18n="metric_collective">Imersão Física Coletiva</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">IA Live</span>
+            <span class="metric-desc" data-i18n="metric_ai">Renderização Generativa em Tempo Real</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT THE PROJECT SECTION -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="about_tag">O PROJETO REAL SENSATION</div>
+          <h2 class="section-title" data-i18n="about_title">Uma Nova Era Cinematográfica Forjada Pela Tecnologia</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="about_intro">
+            Inspirado nas maiores convenções globais de inovação e entretenimento interativo, a Real Sensation surge para responder à pergunta definitiva: o que faz o cinema valer a pena quando as telas domésticas se tornaram gigantes?
+          </p>
+        </div>
+
+        <!-- Narrative Showcase Grid -->
+        <div class="about-grid">
+          
+          <div class="about-card glass-panel" data-reveal>
+            <div class="about-card-media">
+              <img src="assets/images/hero.jpg" alt="Cinema do Futuro Real Sensation" class="about-img" loading="lazy">
+              <div class="card-badge" data-i18n="badge_immersion">IMERSÃO COLETIVA</div>
+            </div>
+            <div class="about-card-body">
+              <h3 class="card-title" data-i18n="about_card1_title">A Sétima Arte Reconstruída do Zero</h3>
+              <p class="card-text" data-i18n="about_card1_text">
+                O streaming e as TVs de alta resolução acomodaram o público no sofá. A Real Sensation quebra essa barreira com uma infraestrutura arquitetônica impossível de reproduzir em ambientes domésticos. É a convergência máxima entre tecnologia de games de última geração, neurociência auditiva e efeitos de teatro físico.
+              </p>
+              <ul class="feature-bullets">
+                <li data-i18n="about_b1">Telas volumétricas curvas de campo visual periférico expandido</li>
+                <li data-i18n="about_b2">Sincronização neural coletiva com a audiência</li>
+                <li data-i18n="about_b3">Atmosfera climática e pulsos táteis milimétricos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-card glass-panel" data-reveal>
+            <div class="about-card-media">
+              <img src="assets/images/sensory-seat.jpg" alt="Cápsulas Sensoriais Hápticas" class="about-img" loading="lazy">
+              <div class="card-badge" data-i18n="badge_haptics">PODS SENSORIAIS 4D</div>
+            </div>
+            <div class="about-card-body">
+              <h3 class="card-title" data-i18n="about_card2_title">Cápsulas Sensoriais Hápticas</h3>
+              <p class="card-text" data-i18n="about_card2_text">
+                Cada espectador ocupa uma estação biométrica sensorial autônoma dotada de transdutores subgraves que transmitem impacto cinematográfico direto na estrutura óssea e muscular, em harmonia com sintetizadores de aromas e rajadas microclimáticas sincronizadas à narrativa.
+              </p>
+              <ul class="feature-bullets">
+                <li data-i18n="about_b4">Feedback tátil de alta fidelidade com resposta tátil a cada batimento</li>
+                <li data-i18n="about_b5">Controle dinâmico individual de intensidade e acessibilidade</li>
+                <li data-i18n="about_b6">Química olfativa digitalizada sem resíduos ou desconforto</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-card glass-panel" data-reveal>
+            <div class="about-card-media">
+              <img src="assets/images/collective-ai.jpg" alt="Inteligência Artificial Coletiva no MASP" class="about-img" loading="lazy">
+              <div class="card-badge" data-i18n="badge_ai">IA GENERATIVA EM TEMPO REAL</div>
+            </div>
+            <div class="about-card-body">
+              <h3 class="card-title" data-i18n="about_card3_title">IA Generativa e Emoção Coletiva</h3>
+              <p class="card-text" data-i18n="about_card3_text">
+                Pela primeira vez no mundo, motores de inteligência artificial monitoram a respiração e a tensão da sala para modular sutilmente frequências sonoras, iluminação periférica e ramificações sensoriais da cena. Cada sessão no MASP será irrepetível e singular.
+              </p>
+              <ul class="feature-bullets">
+                <li data-i18n="about_b7">Redes neurais adaptativas que reagem à pulsação do público</li>
+                <li data-i18n="about_b8">Áudio adaptativo posicional 3D sem perda de diálogo</li>
+                <li data-i18n="about_b9">Experiência verdadeiramente social e compartilhada</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SENSORY IMMERSION PILLARS -->
+    <section class="section pillars-section" id="experiencia">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="pillars_tag">DIMENSÕES DA IMERSÃO</div>
+          <h2 class="section-title" data-i18n="pillars_title">Os 4 Pilares da Experiência Real Sensation</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="pillars_sub">
+            Uma sinestesia calculada milissegundo a milissegundo para despertar sentidos adormecidos.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          
+          <div class="pillar-card" data-reveal>
+            <div class="pillar-number">01</div>
+            <div class="pillar-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_1_t">Óptica Quântica Periférica</h3>
+            <p class="pillar-desc" data-i18n="pillar_1_d">
+              Campo de visão de 220 graus que abraça completamente a retina humana. Elimina os limites da moldura da tela tradicional e transporta sua consciência para dentro da narrativa visual.
+            </p>
+          </div>
+
+          <div class="pillar-card" data-reveal>
+            <div class="pillar-number">02</div>
+            <div class="pillar-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5v14M22 8v8M7 5v14M2 8v8"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_2_t">Neuroacústica Espacial Holística</h3>
+            <p class="pillar-desc" data-i18n="pillar_2_d">
+              Mais de 128 canais sonoros independentes com calibração psicoacústica. Sinta a trajetória de cada sussurro, onda de choque ou acorde passando através de cada centímetro da plateia.
+            </p>
+          </div>
+
+          <div class="pillar-card" data-reveal>
+            <div class="pillar-number">03</div>
+            <div class="pillar-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_3_t">Sintetizador Atmosférico & 4D</h3>
+            <p class="pillar-desc" data-i18n="pillar_3_d">
+              Microclima térmico instantâneo, névoa criogênica e difusão de fragrâncias orgânicas projetadas por perfumistas para associar emoções cinematográficas à memória sensorial profunda.
+            </p>
+          </div>
+
+          <div class="pillar-card" data-reveal>
+            <div class="pillar-number">04</div>
+            <div class="pillar-icon-box">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_4_t">Sinergia Coletiva Presencial</h3>
+            <p class="pillar-desc" data-i18n="pillar_4_d">
+              O cinema como ritual social sagrado. O arrepio comunitário, o suspiro sincronizado de centenas de pessoas reunidas no MASP vivendo um momento que não pode ser pausado ou experimentado isoladamente.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SENSORY VIDEO DEMO SECTION -->
+    <section class="section video-section" id="video-demo">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="video_tag">EXPERIÊNCIA EM VÍDEO</div>
+          <h2 class="section-title" data-i18n="video_title">A Ciência da Imersão Sensorial</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="video_sub">
+            Confira abaixo a demonstração de como a engenharia multi-sensorial, assentos dinâmicos e atmosferas físicas transformam espectadores passivos em participantes vivos da ação cinematográfica.
+          </p>
+        </div>
+
+        <!-- Futuristic Video Player Container -->
+        <div class="video-cyber-frame glass-panel" data-reveal>
+          <div class="video-frame-header">
+            <div class="video-status-indicator">
+              <span class="status-lamp"></span>
+              <span class="status-text" data-i18n="video_status">CANAL SENSORIAL ATIVO • ULTRA HD • 60 FPS</span>
+            </div>
+            <div class="video-specs">
+              <span>AUDIO: DOLBY ATMOS 360</span>
+              <span class="spec-divider">•</span>
+              <span>HAPTIC ENGINE: SYNAPSE 4D</span>
+            </div>
+          </div>
+
+          <!-- YouTube Embed Container -->
+          <div class="video-responsive-wrapper">
+            <iframe 
+              id="sensory-youtube-iframe"
+              src="https://www.youtube-nocookie.com/embed/nbOtjgC45W8?enablejsapi=1&rel=0&modestbranding=1" 
+              title="Demonstração da Imersão Sensorial e Efeitos Físicos Cinematográficos" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Video Badges and Technical Highlights -->
+          <div class="video-tech-pills">
+            <div class="tech-pill">
+              <span class="pill-dot"></span>
+              <span data-i18n="pill_seats">Movimentação Tridimensional</span>
+            </div>
+            <div class="tech-pill">
+              <span class="pill-dot"></span>
+              <span data-i18n="pill_weather">Vento, Calor e Névoa</span>
+            </div>
+            <div class="tech-pill">
+              <span class="pill-dot"></span>
+              <span data-i18n="pill_scent">Dispersão Olfativa Submicrônica</span>
+            </div>
+            <div class="tech-pill">
+              <span class="pill-dot"></span>
+              <span data-i18n="pill_sub">Transdutores de Subgrave Ósseo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EVENT SCHEDULE (1 & 2 DE NOVEMBRO 2026) -->
+    <section class="section schedule-section" id="programacao">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="sched_tag">CRONOGRAMA OFICIAL</div>
+          <h2 class="section-title" data-i18n="sched_title">Amostra Tecnológica: 1 e 2 de Novembro de 2026</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="sched_sub">
+            Dois dias intensos de exibições imersivas, testes ao vivo das cápsulas sensoriais e masterclasses com engenheiros de efeitos.
+          </p>
+        </div>
+
+        <!-- Schedule Day Tabs -->
+        <div class="schedule-tabs-wrapper">
+          <div class="schedule-tabs" role="tablist">
+            <button type="button" class="sched-tab-btn active" id="tab-day1" role="tab" aria-selected="true" data-day="day1">
+              <span class="tab-day-num">01/11</span>
+              <span class="tab-day-name" data-i18n="tab_sat">SÁBADO • ABERTURA & IA</span>
+            </button>
+            <button type="button" class="sched-tab-btn" id="tab-day2" role="tab" aria-selected="false" data-day="day2">
+              <span class="tab-day-num">02/11</span>
+              <span class="tab-day-name" data-i18n="tab_sun">DOMINGO • IMERSÃO TOTAL</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Schedule Content Panels -->
+        <div class="schedule-content">
+          
+          <!-- Day 1 Panel -->
+          <div class="schedule-panel active" id="panel-day1" role="tabpanel">
+            <div class="timeline">
+              
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">10:00 - 11:30</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_keynote">KEYNOTE MAGNA</span>
+                  <h4 class="timeline-title" data-i18n="d1_item1_t">O Nascimento do Cinema Sensorial</h4>
+                  <p class="timeline-desc" data-i18n="d1_item1_d">
+                    Apresentação inaugural com os idealizadores da Real Sensation e demonstração do protótipo acústico e óptico no Auditório Principal do MASP.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">13:00 - 15:30</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_hands_on">HANDS-ON EM PODS</span>
+                  <h4 class="timeline-title" data-i18n="d1_item2_t">Sessões de Teste: Cápsulas Hápticas 4D</h4>
+                  <p class="timeline-desc" data-i18n="d1_item2_d">
+                    O público experimenta cenas curtas de ação, ficção científica e natureza com acionamento pleno de vento, choques táteis e aromas sincronizados.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">17:00 - 19:00</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_panel">PAINEL GAMING & TECH</span>
+                  <h4 class="timeline-title" data-i18n="d1_item3_t">IA Generativa em Tempo Real na Narrativa</h4>
+                  <p class="timeline-desc" data-i18n="d1_item3_d">
+                    Mesa redonda com diretores de cinema, programadores de games AAA e neurocientistas sobre o futuro da imersão cinematográfica coletiva.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">20:00 - 22:00</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_premiere">PREMIÈRE EXCLUSIVA</span>
+                  <h4 class="timeline-title" data-i18n="d1_item4_t">Cine-Concerto "Synesthesia 2026"</h4>
+                  <p class="timeline-desc" data-i18n="d1_item4_d">
+                    Exibição especial combinando música eletrônica ao vivo, projeção volumétrica panorâmica e reações táteis coletivas.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Day 2 Panel -->
+          <div class="schedule-panel" id="panel-day2" role="tabpanel">
+            <div class="timeline">
+              
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">10:30 - 12:30</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_family">TODAS AS IDADES</span>
+                  <h4 class="timeline-title" data-i18n="d2_item1_t">Cinema Sensorial Para Toda a Família</h4>
+                  <p class="timeline-desc" data-i18n="d2_item1_d">
+                    Sessões lúdicas e interativas adequadas para crianças e idosos com parâmetros sensoriais suaves explorando os mistérios do oceano e do cosmos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">14:00 - 16:30</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_challenge">DESAFIO DE CRIAÇÃO</span>
+                  <h4 class="timeline-title" data-i18n="d2_item2_t">Mostra de Curtas Imersivos Independentes</h4>
+                  <p class="timeline-desc" data-i18n="d2_item2_d">
+                    Exibição de obras produzidas por cineastas brasileiros e internacionais utilizando o kit de ferramentas e sensores da Real Sensation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">17:30 - 19:30</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_workshop">BASTIDORES</span>
+                  <h4 class="timeline-title" data-i18n="d2_item3_t">Engenharia Háptica: Como Criar para os Sentidos</h4>
+                  <p class="timeline-desc" data-i18n="d2_item3_d">
+                    Workshop prático ensinando como programar atuadores de vibração, síntese química de aromas e algoritmos de áudio 3D binaural.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-reveal>
+                <div class="timeline-time">20:30 - 22:00</div>
+                <div class="timeline-marker"></div>
+                <div class="timeline-card glass-panel">
+                  <span class="timeline-badge" data-i18n="badge_closing">GRANDE ENCERRAMENTO</span>
+                  <h4 class="timeline-title" data-i18n="d2_item4_t">Experiência Coletiva: O Manifesto Real Sensation</h4>
+                  <p class="timeline-desc" data-i18n="d2_item4_d">
+                    Apresentação final sincronizada com todos os 300 pods simultâneos ativando a capacidade sensorial máxima no Vão Livre e Auditório do MASP.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TARGET AUDIENCE SECTION -->
+    <section class="section audience-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="aud_tag">PÚBLICO-ALVO</div>
+          <h2 class="section-title" data-i18n="aud_title">Criado Para Quem Quer Viver o Próximo Salto Cultural</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="aud_sub">
+            Um evento aberto e acessível para pessoas de todas as idades que buscam uma experiência sem precedentes na capital paulista.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          
+          <div class="audience-card glass-panel" data-reveal>
+            <div class="audience-icon">🎮</div>
+            <h3 class="audience-name" data-i18n="aud_c1_t">Gamers & Entusiastas de Tech</h3>
+            <p class="audience-desc" data-i18n="aud_c1_d">
+              Para quem já ama feedback háptico, motores gráficos avançados e busca a sensação de "estar dentro" de uma cena de ficção interativa.
+            </p>
+          </div>
+
+          <div class="audience-card glass-panel" data-reveal>
+            <div class="audience-icon">🎬</div>
+            <h3 class="audience-name" data-i18n="aud_c2_t">Cinéfilos & Amantes da Arte</h3>
+            <p class="audience-desc" data-i18n="aud_c2_d">
+              Para quem sente falta da magia e grandiosidade do cinema coletivo e quer ver a evolução natural da narrativa dramática e sensorial.
+            </p>
+          </div>
+
+          <div class="audience-card glass-panel" data-reveal>
+            <div class="audience-icon">👨‍👩‍👧‍👦</div>
+            <h3 class="audience-name" data-i18n="aud_c3_t">Famílias & Todas as Idades</h3>
+            <p class="audience-desc" data-i18n="aud_c3_d">
+              Estrutura segura, acessível e surpreendente tanto para jovens curiosos quanto para adultos e idosos que querem se maravilhar.
+            </p>
+          </div>
+
+          <div class="audience-card glass-panel" data-reveal>
+            <div class="audience-icon">💡</div>
+            <h3 class="audience-name" data-i18n="aud_c4_t">Criadores & Estudantes</h3>
+            <p class="audience-desc" data-i18n="aud_c4_d">
+              Ideal para estudantes de audiovisual, design, robótica, inteligência artificial e futuros diretores do audiovisual moderno.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EVENT LOCATION SECTION WITH GOOGLE MAPS -->
+    <section class="section location-section" id="localizacao">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="loc_tag">LOCALIZAÇÃO PRIVILEGIADA</div>
+          <h2 class="section-title" data-i18n="loc_title">No Coração Cultural de São Paulo: MASP</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="loc_sub">
+            O Museu de Arte de São Paulo Assis Chateaubriand será o palco histórico deste encontro entre arte clássica e tecnologia futurista.
+          </p>
+        </div>
+
+        <div class="location-wrapper glass-panel" data-reveal>
+          
+          <!-- Location Info Box -->
+          <div class="location-info">
+            
+            <div class="venue-badge" data-i18n="venue_label">LOCAL OFICIAL DO EVENTO</div>
+            <h3 class="venue-name">MASP — Museu de Arte de São Paulo</h3>
+            <p class="venue-address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200</span>
+            </p>
+
+            <div class="venue-perks">
+              
+              <div class="perk-item">
+                <div class="perk-icon">🚇</div>
+                <div class="perk-details">
+                  <strong data-i18n="perk_metro_t">Metrô Fácil</strong>
+                  <p data-i18n="perk_metro_d">A apenas 50m da Estação Trianon-MASP (Linha 2 - Verde).</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">♿</div>
+                <div class="perk-details">
+                  <strong data-i18n="perk_access_t">100% Acessível</strong>
+                  <p data-i18n="perk_access_d">Elevadores, rampas de acesso e pods com adaptação sensorial.</p>
+                </div>
+              </div>
+
+              <div class="perk-item">
+                <div class="perk-icon">🅿️</div>
+                <div class="perk-details">
+                  <strong data-i18n="perk_parking_t">Estacionamentos</strong>
+                  <p data-i18n="perk_parking_d">Diversos estacionamentos conveniados ao longo da Av. Paulista.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="location-cta-group">
+              <a href="https://maps.google.com/?q=MASP+Sao+Paulo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-cyber" id="btn-open-maps">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                <span data-i18n="btn_maps">Abrir Rota no Google Maps</span>
+              </a>
+              <button type="button" class="btn btn-primary-cyber open-modal-btn" id="loc-rsvp-btn">
+                <span data-i18n="nav_cta">Garantir Acesso</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Google Maps Iframe -->
+          <div class="location-map-container">
+            <div class="map-cyber-header">
+              <span class="map-dot"></span>
+              <span class="map-header-text">GPS SATELLITE FEED // MASP SÃO PAULO</span>
+            </div>
+            <iframe 
+              class="google-map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.09825442526!2d-46.65824968502213!3d-23.56134988468278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMASP%20-%20Museu%20de%20Arte%20de%20S%C3%A3o%20Paulo%20Assis%20Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização do MASP em São Paulo">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-tag" data-i18n="faq_tag">DÚVIDAS FREQUENTES</div>
+          <h2 class="section-title" data-i18n="faq_title">Tudo O Que Você Precisa Saber</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="faq_sub">
+            Confira as principais dúvidas sobre a Amostra Tecnológica Real Sensation no MASP.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion-list">
+          
+          <div class="faq-item glass-panel active">
+            <button type="button" class="faq-question" aria-expanded="true">
+              <span class="faq-q-text" data-i18n="faq_q1">O evento é gratuito ou pago?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1">
+                A entrada para a Amostra Tecnológica é 100% gratuita! No entanto, devido à limitação de assentos das cápsulas sensoriais, é obrigatório realizar o credenciamento prévio através do botão "Garantir Acesso" nesta página para receber sua credencial digital VIP.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span class="faq-q-text" data-i18n="faq_q2">Pessoas com sensibilidade sensorial podem participar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2">
+                Sim! Cada cápsula Real Sensation conta com um console tátil ergonômico individual onde você pode modular a intensidade dos efeitos de vibração física, desativar aromas ou ajustar o volume acústico binaural ao seu nível de conforto a qualquer segundo da sessão.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span class="faq-q-text" data-i18n="faq_q3">Qual a classificação etária do evento?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3">
+                A classificação é livre para todas as idades. Temos programações e exibições adaptadas tanto para famílias com crianças quanto para amantes da ficção científica e jogos de alta voltagem. Menores de 12 anos devem estar acompanhados de pais ou responsáveis.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span class="faq-q-text" data-i18n="faq_q4">O que difere a Real Sensation de salas 4DX ou IMAX convencionais?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">
+                Enquanto salas convencionais utilizam efeitos pré-gravados em caixas coletivas, a Real Sensation emprega inteligência artificial generativa em tempo real para sincronizar o biofeedback do público, áudio neuroacústico intra-auricular e transdutores ósseos que transmitem ondas táteis de alta resolução impossíveis de reproduzir fora dali.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span class="faq-q-text" data-i18n="faq_q5">Onde será a entrada no MASP e quais os horários?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a5">
+                O evento ocorrerá tanto no emblemático Vão Livre quanto no Grande Auditório e Espaço Multiuso do MASP nos dias 1 e 2 de novembro de 2026, com funcionamento ininterrupto das 10h00 às 22h00 no sábado e domingo.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item glass-panel">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span class="faq-q-text" data-i18n="faq_q6">Como recebo minha credencial após o cadastro?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a6">
+                Assim que você preencher seus dados no modal do site, um passe digital futurista com QR Code exclusivo será gerado instantaneamente na tela, com a opção de download para o seu celular e envio de confirmação direta via WhatsApp.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-box glass-panel" data-reveal>
+          <div class="cta-glow-decor"></div>
+          <div class="cta-content">
+            <span class="cta-tag" data-i18n="cta_tag">VAGAS LIMITADAS POR SESSÃO</span>
+            <h2 class="cta-heading" data-i18n="cta_head">Esteja Entre os Primeiros a Sentir o Cinema do Futuro</h2>
+            <p class="cta-text" data-i18n="cta_body">
+              Junte-se a nós no MASP nos dias 1 e 2 de Novembro de 2026. Garanta seu passaporte gratuito e prepare-se para uma experiência inesquecível.
+            </p>
+            <div class="cta-buttons">
+              <button type="button" class="btn btn-primary-cyber open-modal-btn">
+                <span data-i18n="cta_btn">CREDENCIAR AGORA GRATUITAMENTE</span>
+              </button>
+              <a href="#localizacao" class="btn btn-secondary-cyber">
+                <span data-i18n="cta_loc">COMO CHEGAR AO MASP</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <img src="assets/images/logo.jpg" alt="Real Sensation" class="footer-logo">
+          <span class="footer-brand-title">REAL SENSATION</span>
+        </div>
+        <p class="footer-desc" data-i18n="footer_desc">
+          Redefinindo a sétima arte através de inteligência artificial, imersão multissensorial absoluta e conexão física coletiva.
+        </p>
+        <div class="footer-event-reminder">
+          <strong>1 & 2 de Novembro de 2026</strong> • MASP, Av. Paulista - São Paulo
+        </div>
+      </div>
+
+      <div class="footer-col links-col">
+        <h4 class="footer-col-title" data-i18n="footer_nav_t">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#hero" data-i18n="nav_home">Início</a></li>
+          <li><a href="#sobre" data-i18n="nav_about">O Projeto</a></li>
+          <li><a href="#experiencia" data-i18n="nav_experience">Imersão Sensorial</a></li>
+          <li><a href="#video-demo" data-i18n="nav_video">Vídeo Demonstração</a></li>
+          <li><a href="#programacao" data-i18n="nav_schedule">Programação</a></li>
+          <li><a href="#localizacao" data-i18n="nav_location">Localização no MASP</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col hours-col">
+        <h4 class="footer-col-title" data-i18n="footer_dates_t">Informações do Evento</h4>
+        <p><strong>Sábado, 01/11/2026:</strong> 10h às 22h</p>
+        <p><strong>Domingo, 02/11/2026:</strong> 10h às 22h</p>
+        <p><strong>Entrada:</strong> Gratuita com Credenciamento VIP</p>
+        <p><strong>Local:</strong> Vão Livre & Auditório do MASP</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">
+          © 2026 Real Sensation — Amostra Tecnológica Cinematográfica. Todos os direitos reservados.
+        </p>
+        <p class="footer-city">São Paulo • Brasil • Av. Paulista, 1578</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON WITH TRANSLATED TOOLTIP & PRE-FILLED MESSAGE -->
+  <div class="whatsapp-floating-wrapper" id="whatsapp-wrapper">
+    <div class="whatsapp-tooltip" id="whatsapp-tooltip">
+      <span class="tooltip-dot"></span>
+      <span id="whatsapp-tooltip-text">Dúvidas sobre o evento? Fale conosco!</span>
+    </div>
+    <a 
+      href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Amostra%20Tecnol%C3%B3gica%20Real%20Sensation%20no%20MASP%20nos%20dias%201%20e%202%20de%20novembro%20de%202026." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="whatsapp-btn" 
+      id="whatsapp-link" 
+      aria-label="Atendimento no WhatsApp">
+      <div class="wa-ping-ring"></div>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.668-.699c.971.53 1.77.813 2.791.814 3.185 0 5.77-2.586 5.77-5.766 0-3.18-2.586-5.766-5.769-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.704 0-3.32-.429-4.757-1.196l-7.243 1.898 1.936-7.072c-.852-1.492-1.336-3.228-1.336-5.03 0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- REGISTRATION & VIP DIGITAL CREDENTIAL MODAL -->
+  <div class="modal-overlay" id="rsvp-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog glass-panel">
+      
+      <button type="button" class="modal-close-btn" id="modal-close" aria-label="Fechar janela">
+        &times;
+      </button>
+
+      <!-- Modal State 1: Registration Form -->
+      <div class="modal-step" id="modal-form-step">
+        <div class="modal-header">
+          <span class="modal-tag" data-i18n="modal_badge">CREDENCIAMENTO GRATUITO</span>
+          <h3 class="modal-title" id="modal-title" data-i18n="modal_title">Garanta Sua Credencial VIP</h3>
+          <p class="modal-sub" data-i18n="modal_sub">
+            Evento nos dias 1 e 2 de Novembro de 2026 no MASP. Preencha seus dados para receber o passe digital interativo.
+          </p>
+        </div>
+
+        <form id="rsvp-form" class="modal-form" novalidate>
+          <div class="form-group">
+            <label for="rsvp-name" data-i18n="form_label_name">Nome Completo</label>
+            <input type="text" id="rsvp-name" name="name" required placeholder="Ex.: Lucas Fernandes" class="form-input">
+            <span class="form-error" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-email" data-i18n="form_label_email">E-mail Principal</label>
+            <input type="email" id="rsvp-email" name="email" required placeholder="seu.email@exemplo.com" class="form-input">
+            <span class="form-error" id="email-error"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="rsvp-day" data-i18n="form_label_day">Dia de Preferência</label>
+              <select id="rsvp-day" name="day" class="form-select">
+                <option value="both" data-i18n="opt_both">Ambos os Dias (01 e 02/11/2026)</option>
+                <option value="sat" data-i18n="opt_sat">Sábado (01/11/2026)</option>
+                <option value="sun" data-i18n="opt_sun">Domingo (02/11/2026)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="rsvp-age" data-i18n="form_label_age">Faixa Etária</label>
+              <select id="rsvp-age" name="age" class="form-select">
+                <option value="all" data-i18n="opt_age_all">Livre (Todas as Idades)</option>
+                <option value="18-30">18 - 30 anos</option>
+                <option value="31-50">31 - 50 anos</option>
+                <option value="50+">50+ anos</option>
+                <option value="fam" data-i18n="opt_age_fam">Família com Crianças</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-consent">
+            <input type="checkbox" id="rsvp-consent" required checked>
+            <label for="rsvp-consent" data-i18n="form_consent">
+              Concordo em receber a credencial digital e atualizações sobre a amostra tecnológica.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary-cyber w-100" id="btn-submit-rsvp">
+            <span class="btn-text" data-i18n="form_btn_submit">GERAR CREDENCIAL DIGITAL</span>
+            <span class="btn-glow-effect"></span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Modal State 2: Holographic Digital Pass Result -->
+      <div class="modal-step" id="modal-pass-step" style="display: none;">
+        <div class="badge-success-header">
+          <div class="success-icon">✓</div>
+          <h3 data-i18n="pass_success_t">Credenciamento Confirmado!</h3>
+          <p data-i18n="pass_success_d">Sua credencial holográfica foi emitida com sucesso para o MASP.</p>
+        </div>
+
+        <!-- Futuristic Holographic Digital Pass Card -->
+        <div class="holo-pass" id="holo-pass-card">
+          <div class="holo-pass-top">
+            <div class="holo-brand">
+              <span class="holo-logo-text">REAL SENSATION</span>
+              <span class="holo-vip-tag">VIP PASS 2026</span>
+            </div>
+            <div class="holo-code" id="pass-code-val">RS-8942-X</div>
+          </div>
+
+          <div class="holo-pass-body">
+            <div class="holo-attendee">
+              <span class="holo-label" data-i18n="pass_holder">ESPECTADOR:</span>
+              <strong class="holo-name" id="pass-attendee-name">Lucas Fernandes</strong>
+            </div>
+
+            <div class="holo-meta-grid">
+              <div>
+                <span class="holo-label" data-i18n="pass_loc">LOCAL:</span>
+                <span>MASP • Av. Paulista</span>
+              </div>
+              <div>
+                <span class="holo-label" data-i18n="pass_dates">DATAS:</span>
+                <span id="pass-dates-val">01 & 02 Nov 2026</span>
+              </div>
+            </div>
+
+            <div class="holo-qr-box">
+              <div class="qr-mock" aria-label="QR Code">
+                <svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="2" width="6" height="6"></rect>
+                  <rect x="16" y="2" width="6" height="6"></rect>
+                  <rect x="2" y="16" width="6" height="6"></rect>
+                  <rect x="10" y="10" width="4" height="4"></rect>
+                  <line x1="10" y1="2" x2="14" y2="2"></line>
+                  <line x1="2" y1="10" x2="6" y2="10"></line>
+                  <line x1="18" y1="10" x2="22" y2="10"></line>
+                  <line x1="10" y1="18" x2="14" y2="18"></line>
+                  <line x1="18" y1="18" x2="22" y2="22"></line>
+                </svg>
+              </div>
+              <span class="qr-label">AUTHORIZED ENTRY // MASP</span>
+            </div>
+          </div>
+
+          <div class="holo-pass-footer">
+            <span>STATUS: CONFIRMED</span>
+            <span>CINEMA DO FUTURO</span>
+          </div>
+        </div>
+
+        <div class="pass-actions">
+          <button type="button" class="btn btn-secondary-cyber" id="btn-print-pass" onclick="window.print()">
+            <span data-i18n="btn_print">Salvar / Imprimir</span>
+          </button>
+          <button type="button" class="btn btn-primary-cyber" id="btn-close-pass">
+            <span data-i18n="btn_done">Concluído</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
